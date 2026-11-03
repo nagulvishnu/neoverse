@@ -35,7 +35,7 @@ export function PostFX() {
       <ToneMapping mode={ToneMappingMode.ACES_FILMIC} />
       {cfg.smaa ? <SMAA /> : <></>}
       {cfg.vignette ? <Vignette eskil={false} offset={0.25} darkness={0.62} /> : <></>}
-      {cfg.noise ? <Noise premultiply blendFunction={BlendFunction.SOFT_LIGHT} opacity={0.35} /> : <></>}
+      {cfg.noise ? <Noise premultiply blendFunction={BlendFunction.SOFT_LIGHT} opacity={0.08} /> : <></>}
     </EffectComposer>
   );
 }
